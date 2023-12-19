@@ -16,7 +16,7 @@ $uname = $_SESSION['uname'];
   <div class="sidebar close">
     <div class="logo-details">
       <i class='bx bxl-c-plus-plus'></i>
-      <span class="logo_name">MES IDS</span>
+      <span class="logo_name">TOOLS GALLERY</span>
     </div>
     <ul class="nav-links">
       <li>
@@ -32,13 +32,13 @@ $uname = $_SESSION['uname'];
         <div class="iocn-link">
           <a href="#">
             <i class='bx bx-collection'></i>
-            <span class="link_name">Schedules</span>
+            <span class="link_name">Orders</span>
           </a>
           <i class='bx bxs-chevron-down arrow'></i>
         </div>
         <ul class="sub-menu">
-          <li><a class="link_name" href="#">Schedules</a></li>
-          <li><a href="fac_schedule.php">Faculty Schedule</a></li>
+          <li><a class="link_name" href="#">Orders</a></li>
+          <li><a href="fac_schedule.php">Rental list</a></li>
           <li><a href="exam_table.php">Exam Schedule</a></li>
           <li><a href="add_schedview.php">Create Schedule</a></li>
         </ul>

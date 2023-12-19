@@ -118,16 +118,17 @@ $uname = $_SESSION['uname'];
   <div class="d-flex flex-column flex-grow-1" style="padding : 20px; overflow: auto">
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Faculty Schedule</h3>
+          <h3 class="card-title">Rental list</h3>
       <table id="data_table" class="table table-bordered border-dark">
 		<thead>
 			<tr>
         <th>ID</th>
 				<th>Date</th>
         <th>Time</th>
-        <th>Exam</th>
-				<th>Faculty</th>
-        <th>Room</th>
+        <th>Item</th>
+				<th>Address</th>
+        <th>Due date</th>
+        <th>Amount</th>
         <th>Modify</th>
      </tr>
 		</thead>
