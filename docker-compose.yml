@@ -1,0 +1,26 @@
+version: 'latest'
+services:
+  www:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80 # expose port 8080 on host
+    depends_on:
+       - db
+  db:
+    image: mysql:latest
+    environment:
+      - MYSQL_DATABASE=scheduler
+      - MYSQL_USER=php_docker
+      - MYSQL_PASSWORD=password
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1 # True
+    volumes:
+      - "./assets/database:/docker-entrypoint-initdb.d" # persist a sql db even when container
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8001:80
+    environment:
+      - PMA_HOST=db
+      - PMA_PORT=3306
